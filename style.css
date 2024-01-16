@@ -1,0 +1,36 @@
+/* ResetPage */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* NavbarSet */
+.bg-dark {
+    color: #000000;
+}
+
+.nav-item:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+img.User-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* ImageSet */
+img.pic {
+    width: 100%;
+    transition: 250ms all;
+}
+
+img.pic:hover {
+    transform: scale(1.5);
+}
