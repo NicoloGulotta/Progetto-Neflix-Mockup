@@ -1,7 +1,7 @@
-let items = document.querySelectorAll('.carousel .carousel-item')
+ let items = document.querySelectorAll('.carousel .carousel-item')
 
 items.forEach((el) => {
-    const minPerSlide = 8;
+    const minPerSlide = 6;
     let next = el.nextElementSibling;
     for (var i=1; i<minPerSlide; i++) {
         if (!next) {
@@ -13,4 +13,5 @@ items.forEach((el) => {
         next = next.nextElementSibling;
     }
 })
- const ChangeClass=document.querySelectorAll("")
+
+

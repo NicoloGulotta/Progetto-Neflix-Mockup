@@ -6,22 +6,32 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
   background-color: #141414;
 }
-img.pic{
+
+/* ImgSet */
+img.User-icon {
+  width: 25px;
+  height: 25px;
+}
+
+img.pic {
   width: 100%;
   transition: all 1s ease-in-out 0.5s;
 }
-img.pic:hover{
+
+img.pic:hover {
   scale: 1.3;
   border: 1px solid;
   padding: 5px;
   box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
 }
+
+
+/* DisplayCarousellSet */
 @media (max-width: 767px) {
   .carousel-inner .carousel-item>div {
-    display: none;
+    /* display: none; */
   }
 
   .carousel-inner .carousel-item>div:first-child {
@@ -70,4 +80,8 @@ img.pic:hover{
 .carousel-inner .carousel-item-end,
 .carousel-inner .carousel-item-start {
   transform: translateX(0);
+}
+
+div.card-img-overlay {
+  display: none;
 }
