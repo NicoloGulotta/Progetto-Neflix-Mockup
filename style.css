@@ -1,46 +1,73 @@
 /* ResetPage */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: #141414;
 }
-
-/* NavbarSet */
-.bg-dark {
-    color: #000000;
+img.pic{
+  width: 100%;
+  transition: all 1s ease-in-out 0.5s;
 }
-
-.nav-item:hover {
-    font-weight: bold;
-    cursor: pointer;
+img.pic:hover{
+  scale: 1.3;
+  border: 1px solid;
+  padding: 5px;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
 }
-
-img.User-icon {
-    width: 30px;
-    height: 30px;
-}
-
-/* ImageSet */
-@media screen and (max-width: 992px) {
-    .pic {
-      width: 50%;
-    }
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item>div {
+    display: none;
   }
-  @media screen and (max-width: 600px) {
-    .pic {
-      width: 25%;
-    }
+
+  .carousel-inner .carousel-item>div:first-child {
+    display: block;
   }
-img.pic {
-    width: 100%;
-    transition: 250ms all;
 }
 
-img.pic:hover {
-    transform: scale(1.5);
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (max-width: 992px) and (min-width:768px) {
+
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(33.33%);
+  }
+
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-33.33%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+
+@media (min-width:992px) {
+
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(16.66%);
+  }
+
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-16.66%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0);
 }

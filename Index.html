@@ -12,149 +12,269 @@
 </head>
 
 <body>
-    <div class="bg-dark">
-        <!-- NavBar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid ">
-                <a class="navbar-brand" href="#"><img src="/assets/imgs/Netflix_Logo_RGB.png" width="60px"
-                        alt="Netflix_Logo_RGB"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link text-white" href="#">TV Shows</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link text-white" href="#">Movies</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link text-white" href="#">Recently Added</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link text-white" href="#">My list</a>
-                        </li>
-                    </ul>
-                    <div class="nav-item d-flex justify-content-end align-items-center ">
-                        <i class="fa-solid fa-magnifying-glass mx-2 text-white"></i>
-                        <span class="text-white text-uppercase mx-2">kids</span>
-                        <i class="fa-solid fa-bell mx-2 text-white"></i>
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle text-white" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                <img class="User-icon" src="/assets/imgs/movies/1.png" alt="Avatar-1"></button>
-                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
-                                <li><a class="dropdown-item active" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Separated link</a></li>
-                            </ul>
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg  navbar-dark ">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#"><img src="/assets/imgs/Netflix_Logo_RGB.png" width="60px"
+                    alt="Netflix_Logo_RGB"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="#">TV Shows</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="#">Movies</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="#">Recently Added</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="#">My list</a>
+                    </li>
+                </ul>
+                <div class="nav-item d-flex justify-content-end align-items-center ">
+                    <i class="fa-solid fa-magnifying-glass mx-2 text-white"></i>
+                    <span class="text-white text-uppercase mx-2">kids</span>
+                    <i class="fa-solid fa-bell mx-2 text-white"></i>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle text-white" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img class="User-icon" src="/assets/imgs/movies/1.png" alt="Avatar-1"></button>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                            <li><a class="dropdown-item active" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Heding -->
+    <div class="container d-flex align-items-center my-3">
+        <h2 class="text-white fw-bold pe-4 ">Tv Shows</h2>
+        <div class="dropdown">
+            <button class="btn btn-sm dropdown-toggle text-white  border border-white rounded-0" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Genres</button>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                <li><a class="dropdown-item active" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- FirstSection -->
+    <div class="container  mb-4">
+        <h4 class="inline-block text-white">Treding Now</h4>
+        <div class="row flex-nowrap g-0 ">
+            <div class="Film col-md-2 col-6 ">
+                <img src="/assets/imgs/movies/1.png" alt="pic_1" class="pic">
+            </div>
+            <div class="Film col-md-2 col-6">
+                <img src="/assets/imgs/movies/2.png" alt="pic_2" class="pic">
+            </div>
+            <div class="Film col-md-2 col-6">
+                <img src="/assets/imgs/movies/3.png" alt="pic_3" class="pic">
+            </div>
+            <div class="Film col-md-2 col-6">
+                <img src="/assets/imgs/movies/4.png" alt="pic_4" class="pic">
+            </div>
+            <div class="Film col-md-2 col-6">
+                <img src="/assets/imgs/movies/5.png" alt="pic_5" class="pic">
+            </div>
+            <div class="Film col-md-2 col-6">
+                <img src="/assets/imgs/movies/6.png" alt="pic_6" class="pic">
+            </div>
+            <div class="Film col-md-2 col-6">
+                <img src="/assets/imgs/movies/7.png" alt="pic_6" class="pic">
+            </div>
+        </div>
+    </div>
+
+    <!-- SecondSection -->
+    <div class="container  mb-4">
+        <h4 class="inline-block text-white">Whatch it Again</h4>
+        <div class="row flex-nowrap g-0">
+            <div class="Film col-md-2 col-6">
+                <img src="/assets/imgs/movies/8.png" alt="pic_1" class="pic">
+            </div>
+            <div class="Film col-md-2 col-6">
+                <img src="/assets/imgs/movies/9.png" alt="pic_2" class="pic">
+            </div>
+            <div class="Film col-md-2 col-6">
+                <img src="/assets/imgs/movies/10.png" alt="pic_3" class="pic">
+            </div>
+            <div class="Film col-md-2 col-6">
+                <img src="/assets/imgs/movies/11.png" alt="pic_4" class="pic">
+            </div>
+            <div class="Film col-md-2 col-6">
+                <img src="/assets/imgs/movies/12.png" alt="pic_5" class="pic">
+            </div>
+            <div class="Film col-md-2 col-6">
+                <img src="/assets/imgs/movies/13.png" alt="pic_6" class="pic">
+            </div>
+            <div class="Film col-md-2 col-6">
+                <img src="/assets/imgs/movies/14.png" alt="pic_6" class="pic">
+            </div>
+        </div>--
+    </div>
+
+    <!-- TirdSection -->
+    <div class="container  mb-4">
+        <h4 class="inline-block text-white">New Releases</h4>
+        <div class="row flex-nowrap g-0">
+            <div class="Film col-md-2 col-6">
+                <img src="/assets/imgs/movies/15.png" alt="pic_1" class="pic">
+            </div>
+            <div class="Film col-md-2 col-6">
+                <img src="/assets/imgs/movies/16.png" alt="pic_2" class="pic">
+            </div>
+            <div class="Film col-md-2 col-6">
+                <img src="/assets/imgs/movies/17.png" alt="pic_3" class="pic">
+            </div>
+            <div class="Film col-md-2 col-6">
+                <img src="/assets/imgs/movies/18.png" alt="pic_4" class="pic">
+            </div>
+            <div class="Film col-md-2 col-6">
+                <img src="/assets/imgs/movies/1.png" alt="pic_5" class="pic">
+            </div>
+            <div class="Film col-md-2 col-6">
+                <img src="/assets/imgs/movies/5.png" alt="pic_6" class="pic">
+            </div>
+            <div class="Film col-md-2 col-6">
+                <img src="/assets/imgs/movies/12.png" alt="pic_6" class="pic">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="container-fluid text-center my-3 px-2 ">
+            <h2 class="font-weight-light">Bootstrap Multi Slide Carousel</h2>
+            <div class="row mx-auto my-auto justify-content-center">
+                <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400/31f?text=1" class="img-fluid">
+                                    </div>
+                                    <div class="card-img-overlay">Slide 1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400/e66?text=2" class="img-fluid">
+                                    </div>
+                                    <div class="card-img-overlay">Slide 2</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400/7d2?text=3" class="img-fluid">
+                                    </div>
+                                    <div class="card-img-overlay">Slide 3</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400?text=4" class="img-fluid">
+                                    </div>
+                                    <div class="card-img-overlay">Slide 4</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400/aba?text=5" class="img-fluid">
+                                    </div>
+                                    <div class="card-img-overlay">Slide 5</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400/fc0?text=6" class="img-fluid">
+                                    </div>
+                                    <div class="card-img-overlay">Slide 6</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400/aba?text=5" class="img-fluid">
+                                    </div>
+                                    <div class="card-img-overlay">Slide 5</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="//via.placeholder.com/500x400/fc0?text=6" class="img-fluid">
+                                    </div>
+                                    <div class="card-img-overlay">Slide 6</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                </div>
-            </div>
-        </nav>
 
-        <!-- FirstSection -->
-        <div class="container bg-dark mb-4">
-            <h2 class="inline-block text-white">TV Shows</h2>
-            <div class="row flex-nowrap g-0">
-                <div class="Film col-md-2">
-                    <img src="/assets/imgs/movies/1.png" alt="pic_1" class="pic">
                 </div>
-                <div class="Film col-md-2">
-                    <img src="/assets/imgs/movies/2.png" alt="pic_2" class="pic">
-                </div>
-                <div class="Film col-md-2">
-                    <img src="/assets/imgs/movies/3.png" alt="pic_3" class="pic">
-                </div>
-                <div class="Film col-md-2">
-                    <img src="/assets/imgs/movies/4.png" alt="pic_4" class="pic">
-                </div>
-                <div class="Film col-md-2">
-                    <img src="/assets/imgs/movies/5.png" alt="pic_5" class="pic">
-                </div>
-                <div class="Film col-md-2">
-                    <img src="/assets/imgs/movies/6.png" alt="pic_6" class="pic">
-                </div>
-                <div class="Film col-md-2">
-                    <img src="/assets/imgs/movies/7.png" alt="pic_6" class="pic">
-                </div>
+                <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
             </div>
-        </div>
+        </div> -->
 
-        <!-- SecondSection -->
-        <div class="container bg-dark mb-4">
-            <h2 class="inline-block text-white">Whatch it Again</h2>
-            <div class="row flex-nowrap g-0">
-                <div class="Film col-md-2">
-                    <img src="/assets/imgs/movies/8.png" alt="pic_1" class="pic">
-                </div>
-                <div class="Film col-md-2">
-                    <img src="/assets/imgs/movies/9.png" alt="pic_2" class="pic">
-                </div>
-                <div class="Film col-md-2">
-                    <img src="/assets/imgs/movies/10.png" alt="pic_3" class="pic">
-                </div>
-                <div class="Film col-md-2">
-                    <img src="/assets/imgs/movies/11.png" alt="pic_4" class="pic">
-                </div>
-                <div class="Film col-md-2">
-                    <img src="/assets/imgs/movies/12.png" alt="pic_5" class="pic">
-                </div>
-                <div class="Film col-md-2">
-                    <img src="/assets/imgs/movies/13.png" alt="pic_6" class="pic">
-                </div>
-                <div class="Film col-md-2">
-                    <img src="/assets/imgs/movies/14.png" alt="pic_6" class="pic">
-                </div>
-            </div>
-        </div>
 
-        <!-- TirdSection -->
-        <div class="container bg-dark mb-4">
-            <h2 class="inline-block text-white">New Releases</h2>
-            <div class="row flex-nowrap g-0">
-                <div class="Film col-md-2">
-                    <img src="/assets/imgs/movies/15.png" alt="pic_1" class="pic">
-                </div>
-                <div class="Film col-md-2">
-                    <img src="/assets/imgs/movies/16.png" alt="pic_2" class="pic">
-                </div>
-                <div class="Film col-md-2">
-                    <img src="/assets/imgs/movies/17.png" alt="pic_3" class="pic">
-                </div>
-                <div class="Film col-md-2">
-                    <img src="/assets/imgs/movies/18.png" alt="pic_4" class="pic">
-                </div>
-                <div class="Film col-md-2">
-                    <img src="/assets/imgs/movies/1.png" alt="pic_5" class="pic">
-                </div>
-                <div class="Film col-md-2">
-                    <img src="/assets/imgs/movies/5.png" alt="pic_6" class="pic">
-                </div>
-                <div class="Film col-md-2">
-                    <img src="/assets/imgs/movies/12.png" alt="pic_6" class="pic">
-                </div>
-            </div>
-        </div>
-        <!-- Footer -->
-        <footer></footer>
-    </div>
-    <script src="index.js"></script>
+    <!-- Footer -->
+    <footer>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
