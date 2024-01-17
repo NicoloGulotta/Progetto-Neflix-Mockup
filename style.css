@@ -26,6 +26,16 @@ img.User-icon {
 }
 
 /* ImageSet */
+@media screen and (max-width: 992px) {
+    .pic {
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .pic {
+      width: 25%;
+    }
+  }
 img.pic {
     width: 100%;
     transition: 250ms all;
