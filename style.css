@@ -15,17 +15,22 @@ img.User-icon {
   height: 25px;
 }
 
-img.pic {
+img.img-fluid {
   width: 100%;
   transition: all 1s ease-in-out 0.5s;
 }
 
-img.pic:hover {
+img.img-fluid:hover {
+  z-index: 2;
   scale: 1.3;
   border: 1px solid;
-  padding: 5px;
   box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
 }
+
+div.carousel-inner {
+  overflow: visible;
+}
+
 
 
 /* DisplayCarousellSet */
