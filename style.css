@@ -8,35 +8,48 @@
 body {
   background-color: #141414;
 }
-
+/* TAgSet */
+i{
+  cursor: pointer;
+  overflow-y: visible;
+}
 /* ImgSet */
 img.User-icon {
   width: 25px;
   height: 25px;
 }
-
-img.img-fluid {
-  width: 100%;
-  transition: all 1s ease-in-out 0.5s;
+div.movie-block {
+  position: relative;
 }
-
-img.img-fluid:hover {
-  z-index: 2;
-  scale: 1.3;
-  border: 1px solid;
-  box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+div.movie-info {
+  font-size: 20px;
+  width:100%;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  display: none;
 }
-
+.show {
+  display: block !important;
+}
+div.movie-info:hover {
+  transition:all 1,5s linear 0.8s;
+  transform: scale(1.3);
+  z-index: 1;
+}
 div.carousel-inner {
   overflow: visible;
 }
-
-
 
 /* DisplayCarousellSet */
 @media (max-width: 767px) {
   .carousel-inner .carousel-item>div {
     /* display: none; */
+    @media only screen and (max-width: 600px) {
+      a.carousel-control-prev,a.carousel-control-next {
+        display: none;
+      }
+    }
   }
 
   .carousel-inner .carousel-item>div:first-child {
